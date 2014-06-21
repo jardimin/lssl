@@ -1,0 +1,198 @@
+#N canvas 1 109 1114 636 10;
+#X obj 102 199 bng 75 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X obj 222 198 bng 75 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X obj 339 198 bng 75 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X obj 455 198 bng 75 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X obj 99 36 bng 75 250 50 0 empty empty empty 17 7 0 10 -258113 -1
+-1;
+#X obj 66 371 sendOSC;
+#X msg 50 -12 connect localhost 6250;
+#X msg 73 297 send /control/1/play 1;
+#X msg 223 297 send /control/2/play 1;
+#X obj 574 197 bng 75 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X obj 690 197 bng 75 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X msg 328 325 send /control/3/play 1;
+#X msg 478 325 send /control/4/play 1;
+#X msg 572 295 send /control/5/play 1;
+#X msg 722 295 send /control/6/play 1;
+#X obj 217 36 bng 75 250 50 0 empty empty empty 17 7 0 10 -258113 -1
+-1;
+#X obj 335 36 bng 75 250 50 0 empty empty empty 17 7 0 10 -258113 -1
+-1;
+#X obj 445 34 bng 75 250 50 0 empty empty empty 17 7 0 10 -258113 -1
+-1;
+#X obj 576 32 bng 75 250 50 0 empty empty empty 17 7 0 10 -258113 -1
+-1;
+#X obj 693 29 bng 75 250 50 0 empty empty empty 17 7 0 10 -258113 -1
+-1;
+#X msg 88 124 send /control/7/play 1;
+#X msg 283 127 send /control/8/play 1;
+#X msg 388 155 send /control/9/play 1;
+#X msg 445 119 send /control/10/play 1;
+#X msg 579 144 send /control/11/play 1;
+#X msg 692 112 send /control/12/play 1;
+#X obj 49 -39 loadbang;
+#X text 299 -38 MESA DE CORTE via CasapCGclient - ATEM TVS;
+#X obj 343 417 bng 40 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X obj 415 419 bng 40 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X obj 476 421 bng 40 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X obj 543 422 bng 40 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X obj 605 423 bng 40 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X obj 671 424 bng 40 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X obj 772 424 bng 40 250 50 0 empty empty empty 17 7 0 10 -4034 -1
+-1;
+#X text 356 395 1;
+#X text 506 365 AUDIO ON e OFF;
+#X obj 343 486 bng 40 250 50 0 empty empty empty 17 7 0 10 -258113
+-1 -1;
+#X obj 412 486 bng 40 250 50 0 empty empty empty 17 7 0 10 -258113
+-1 -1;
+#X obj 477 487 bng 40 250 50 0 empty empty empty 17 7 0 10 -258113
+-1 -1;
+#X obj 546 487 bng 40 250 50 0 empty empty empty 17 7 0 10 -258113
+-1 -1;
+#X obj 615 486 bng 40 250 50 0 empty empty empty 17 7 0 10 -258113
+-1 -1;
+#X obj 680 487 bng 40 250 50 0 empty empty empty 17 7 0 10 -258113
+-1 -1;
+#X obj 772 489 bng 40 250 50 0 empty empty empty 17 7 0 10 -258113
+-1 -1;
+#X text 777 385 ext;
+#X text 419 395 2;
+#X text 478 397 3;
+#X text 548 397 4;
+#X text 608 396 5;
+#X text 676 396 6;
+#X msg 344 463 13;
+#X msg 419 463 15;
+#X msg 481 468 17;
+#X msg 539 467 19;
+#X msg 608 466 21;
+#X msg 673 469 23;
+#X msg 771 467 25;
+#X msg 342 533 14;
+#X msg 413 531 16;
+#X msg 478 532 18;
+#X msg 544 534 20;
+#X msg 617 533 22;
+#X msg 686 534 24;
+#X msg 775 538 26;
+#X msg 153 368 send /control/\$1/play 1;
+#X obj 827 197 bng 70 250 50 0 empty empty empty 17 7 0 10 -4032 -1
+-1;
+#X obj 827 66 bng 70 250 50 0 empty empty empty 17 7 0 10 -257985 -1
+-1;
+#X msg 817 270 26;
+#X msg 828 148 27;
+#X obj 957 211 bng 65 250 50 0 empty empty empty 17 7 0 10 -4032 -1
+-1;
+#X obj 1042 210 bng 65 250 50 0 empty empty empty 17 7 0 10 -4032 -1
+-1;
+#X obj 948 32 bng 65 250 50 0 empty empty empty 17 7 0 10 -258113 -1
+-1;
+#X obj 1033 31 bng 65 250 50 0 empty empty empty 17 7 0 10 -258113
+-1 -1;
+#X obj 949 134 bng 65 250 50 0 empty empty empty 17 7 0 10 -260097
+-1 -1;
+#X obj 1036 133 bng 65 250 50 0 empty empty empty 17 7 0 10 -260097
+-1 -1;
+#X text 965 -5 DSK1;
+#X text 1050 -4 DSK2;
+#X text 959 56 ON AIR;
+#X text 1044 55 ON AIR;
+#X text 974 232 AUTO;
+#X text 1060 233 AUTO;
+#X msg 934 197 28;
+#X msg 1023 192 29;
+#X msg 950 107 30;
+#X msg 1031 105 31;
+#X msg 963 286 32;
+#X msg 1051 285 33;
+#X text 847 225 AUTO;
+#X text 852 92 CUT;
+#X text 845 60;
+#X text 964 157 OFF AIR;
+#X text 1045 156 OFF AIR;
+#X connect 0 0 7 0;
+#X connect 1 0 8 0;
+#X connect 2 0 11 0;
+#X connect 3 0 12 0;
+#X connect 4 0 20 0;
+#X connect 6 0 5 0;
+#X connect 7 0 5 0;
+#X connect 8 0 5 0;
+#X connect 9 0 13 0;
+#X connect 10 0 14 0;
+#X connect 11 0 5 0;
+#X connect 12 0 5 0;
+#X connect 13 0 5 0;
+#X connect 14 0 5 0;
+#X connect 15 0 21 0;
+#X connect 16 0 22 0;
+#X connect 17 0 23 0;
+#X connect 18 0 24 0;
+#X connect 19 0 25 0;
+#X connect 20 0 5 0;
+#X connect 21 0 5 0;
+#X connect 22 0 5 0;
+#X connect 23 0 5 0;
+#X connect 24 0 5 0;
+#X connect 25 0 5 0;
+#X connect 26 0 6 0;
+#X connect 28 0 50 0;
+#X connect 29 0 51 0;
+#X connect 30 0 52 0;
+#X connect 31 0 53 0;
+#X connect 32 0 54 0;
+#X connect 33 0 55 0;
+#X connect 34 0 56 0;
+#X connect 37 0 57 0;
+#X connect 38 0 58 0;
+#X connect 39 0 59 0;
+#X connect 40 0 60 0;
+#X connect 41 0 61 0;
+#X connect 42 0 62 0;
+#X connect 43 0 63 0;
+#X connect 50 0 64 0;
+#X connect 51 0 64 0;
+#X connect 52 0 64 0;
+#X connect 53 0 64 0;
+#X connect 54 0 64 0;
+#X connect 55 0 64 0;
+#X connect 56 0 64 0;
+#X connect 57 0 64 0;
+#X connect 58 0 64 0;
+#X connect 59 0 64 0;
+#X connect 60 0 64 0;
+#X connect 61 0 64 0;
+#X connect 62 0 64 0;
+#X connect 63 0 64 0;
+#X connect 64 0 5 0;
+#X connect 65 0 67 0;
+#X connect 66 0 68 0;
+#X connect 67 0 64 0;
+#X connect 68 0 64 0;
+#X connect 69 0 85 0;
+#X connect 70 0 86 0;
+#X connect 71 0 83 0;
+#X connect 72 0 84 0;
+#X connect 73 0 81 0;
+#X connect 74 0 82 0;
+#X connect 81 0 64 0;
+#X connect 82 0 64 0;
+#X connect 83 0 64 0;
+#X connect 84 0 64 0;
+#X connect 85 0 64 0;
+#X connect 86 0 64 0;

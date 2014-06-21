@@ -1,0 +1,216 @@
+CasparCG Client 2.0.7 BETA 2
+============================
+- FIX: Reconnect issues.
+- FIX: ATEM / TriCaster commands is sent to all defined hosts.
+- FIX: Transition duration is not set correctly on image items.
+- FIX: Thumbnail preview for videos is missing in the preview inspector.
+- FIX: Duplicate / Open in the rundown overrides saved clipboard data.
+- NEW: Added option for indicate used items in the rundown (Windows only).
+- NEW: Double click on a template item in the rundown open up add template data dialog.
+- NEW: Added keyboard shortcuts for open rundown (Ctrl+O), open rundown from repository (Ctrl+Shift+O),
+       new rundown (Ctrl+N) and save as (Ctrl+Shift+S).
+- UPDATE: UI changes.
+- UPDATE: Enter closes the template data dialog.
+- UPDATE: Removed size restriction on the main window and template data dialog. 
+
+
+
+CasparCG Client 2.0.7 BETA 1
+============================
+- NEW: Added new flat theme.
+- NEW: Added support for navigating in the rundown using OSC.
+- NEW: Added trigger on next option for TriCaster items.
+- NEW: Added support for open a rundown from the command line using the -rundown switch.
+- NEW: Added support for Blackmagic ATEM mixers.
+- NEW: Added Play Now! action. Can be used for bypassing the delay on items and groups.
+- NEW: Added Preview action. Can be used together with AutoStep to preview next item in the rundown.
+- NEW: Added option for clear delayed commands on a group with AutoStep enabled.
+- NEW: Added support for open rundowns from a online repository.
+- NEW: Added support for output duration.
+- NEW: Added experimental support for in memory database through -dbmemory flag.
+- NEW: Added settings option for storing thumbnails in the database.
+- NEW: Added support for delete all thumbnails in the database.
+- FIX: Thumbnail preview don't change when changing the item target.
+- FIX: Slow network reaction.
+- UPDATE: Trigger visual mixer commands on load.
+- UPDATE: Changed version scheme.
+- UPDATE: The duration property is renamed from "duration" to "transitionDuration".
+	  Previously saved rundonws, which containes the "duration" property, may need
+	  to be converted to the new standard to be able to load.
+
+
+
+CasparCG Client 2.0.6
+=====================
+- NEW: Added support for specifying the output delay in frames or milliseconds.
+- NEW: The Enter/Return keys open up the template data dialog in add mode.
+- NEW: Enter/Return + Shift keys open up the template data dialog in edit mode.
+- NEW: Added support for triggering items remotely using OSC and UID.
+- NEW: Added OSC output item.
+- NEW: Added support for NewTek TriCaster 410, 460, 850, 860, 8000.
+- NEW: Added support for drag-and-drop internally in the template data.
+- NEW: Added support for dropping stored data on a template items.
+- NEW: Added support for changing the default OSC port.
+- NEW: Added support for chroma key, based on code contribution by cambell. 
+       Requires CasparCG Server 2.0.4 or later.
+- NEW: Added support for auto play, based on code contribution by DreamHack 
+       and Robert Nagy.
+- NEW: Added support for disable sending commands to CasparCG Server(s) 
+       based on code contribution by YLE and Robert Nagy.
+- NEW: Added support for importing CasparCG Server configuration files from disk,
+       based on code contribution by YLE and Robert Nagy.
+- FIX: OSC progress now works correctly when using "localhost" as server address.
+- FIX: Font rendering issue on Mac OS X Mavericks.
+- UPDATE: OSC performance improvements.
+- UPDATE: Targets are reloaded when the library is refreshed.
+- UPDATE: Drag-and-drop improvements.
+- UPDATE: Devices marked as "Shadow system" will not show up in the device lists.
+- UPDATE: Changing target in the Inspector now changes the rundown item label if 
+          they have the same name. 
+- UPDATE: UI improvements.
+
+
+
+CasparCG Client 2.0.5
+=====================
+- NEW: Added support for uppercase template data.
+- NEW: Added drag and drop support.
+- NEW: Added option for disable OSC progress.
+- UPDATE: Performance improvement using OSC message cache.
+
+
+
+CasparCG Client 2.0.4
+=====================
+- FIX: Connection issue if server not started.
+- FIX: Client crash when loading GPI settings.
+- FIX: Wrong item is selected when changing rundown tab.
+- FIX: Performance issues.
+- NEW: Added tools to the sidebar.
+- NEW: Added OSC messages in video items.
+- NEW: Added in/out points to video items.
+- NEW: Added support for cut/copy/paste between rundowns.
+- UPDATE: Changed filtering functionality.
+- UPDATE: Changed output delay to be frame based.
+- UPDATE: Support for multiline in template fields.
+- UPDATE: UI changes.
+
+Note: Previously saved rundowns created with an older versions of the Client 
+      are not compatible anymore!
+
+
+
+CasparCG Client 2.0.1
+=====================
+- FIX: Menu problem on Ubuntu.
+- FIX: Couldn't change Target name in the Inspector panel output.
+- FIX: Changing channel and hitting 'Enter' would cause a crash.
+- FIX: Channel values were not set in some cases.
+
+
+
+CasparCG Client 2.0
+===================
+- FIX: Open rundowns containing mixer opacity item used to cause a crash.
+- FIX: Rundown items device info is cleared if the device does not exists.
+- FIX: Warns that unsaved changes will be lost upon Quit.
+- NEW: Added presets support.
+- NEW: Double-clicking a library item adds it to the rundown.
+- NEW: Added 'Custom Command' item.
+- NEW: Added Ctrl+D / Cmd-D for duplicating rundown items.
+- NEW: Added solid color item.
+- NEW: Added support for multiple rundowns using tabs.
+- NEW: Added support for offline devices, so you don't need a running CasparCG Server 
+       to add a device.
+- NEW: Added master volume. Requires CasparCG Server 2.0.4 or later.
+- NEW: Added thumbnail support. Requires CasparCG Server 2.0.4 or later.
+- NEW: Added full Linux support.
+- UPDATE: UI changes.
+
+Note: Previously saved rundowns created with an older versions of the Client 
+      are not compatible anymore!
+
+
+
+CasparCG Client 2.0 RC 1
+========================
+- FIX: UPDATE command on template items should use the delay value.
+- FIX: The Client will not send UPDATE if template data is empty.
+- FIX: The name parameter in the image scroller was not set correctly when 
+       rundown was opened.
+- FIX: Better support for spaces in filenames.
+- FIX: Freeze on load did not work as expected.
+- FIX: Defer on Mixer keyer is missing.
+- FIX: The parameters SEEK and LENGTH was sent regardless of whether they were set or not.
+- NEW: Added support for pause/resume on Image scroller and DeckLink input items.
+- NEW: Added trigger on next option for media items.
+- NEW: Added support for CasparCG Server PRINT command.
+- NEW: Added support for naming output using PRINT command. 
+       Requires CasparCG Server 2.0.4 or later.
+- NEW: Added a separator item.
+- NEW: Added support for colorized groups.
+- NEW: Show active rundown in title bar.
+- NEW: Support for cancelling delayed commands.
+- NEW: Added a 'Clear Output' item.
+- NEW: Added support for notes on group items.
+- NEW: Added support for automatic steps in the rundown.
+- NEW: Added execute indication on items.
+- UPDATE: UI modifications.
+- UPDATE: The Client will execute the MIXER command when UPDATE is issued.
+
+
+
+CasparCG Client 2.0 Beta 3
+==========================
+- FIX: Disabled videolayer in the inspector for the File recorder.
+- FIX: Fixed Ctrl/Command mapping on Mac OS X.
+- FIX: The application crashed if trying to execute command where channel was out of 
+       range for a specific device.
+- FIX: If up/down arrow key was triggered really fast in the rundown, the inspector 
+       would update the wrong item.
+- FIX: Ungrouping rundown items not in a group, using CTRL+U, made the items disappear.
+- FIX: The rundown was using the wrong encoding when opening a rundown from disk.
+- FIX: The client sent multiple VERSION commands to the server after a new device was 
+       been added.
+- FIX: Could not seek in media if the length is zero.
+- FIX: Font rendering on Mac OS X.
+- NEW: Added support for recording with separated alpha in CasparCG Server 2.0.4 or later.
+- NEW: Added support for the AUTO parameter on media items in the rundown.
+- NEW: Added application icon for Mac OS X.
+- NEW: Added support for see stored data in the library.
+- NEW: Added support for the LOAD command through "Pause on load" property on media items.
+- NEW: The rundown now support compact view.
+- NEW: The color/expanded state on rundown items is now saved when you persist the 
+       rundown to disk.
+- UPDATE: Changed colorization logic of rundown items.
+- UPDATE: Minor UI changes.
+- UPDATE: The client will execute the mixer command when UPDATE or INVOKE is issued.
+
+Note: Previously saved rundowns created with an older version of the client is not
+      compatible anymore.
+
+
+CasparCG Client 2.0 Beta 2
+==========================
+- FIX: Various bugs.
+- NEW: Added support for build the project on Mac OS X with full GPI support.
+- UPDATE: UI modifications.
+
+
+
+CasparCG Client 2.0 Beta 1
+==========================
+- FIX: Various bugs.
+- NEW: Support for open/save rundown lists.
+- NEW: Support for file recording using qtrle, dnxhd, prores, ffvhuff rawvideo, h264.
+- NEW: Support for image scroll producer.
+- NEW: Support for DeckLink input.
+- NEW: Support for transactional mixer commands using commit/defer.
+- NEW: Support for GPI/GPO on groups and individual rundown items.
+- NEW: Support for GPI/GPO. Two sample project is in the repository (arduino/iocore).
+
+
+CasparCG Client 2.0 Alpha 1
+===========================
+- NEW: Initial version.
+
