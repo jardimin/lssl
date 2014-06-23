@@ -1,5 +1,5 @@
-#N canvas 1 89 1009 608 10;
-#N canvas 0 88 1366 680 mesa-de-corte 1;
+#N canvas 1 97 1009 608 10;
+#N canvas 1 96 1366 680 mesa-de-corte 0;
 #X obj 73 883 bng 75 250 50 0 empty prev1 empty 17 7 0 10 -4034 -1
 -1;
 #X obj 193 882 bng 75 250 50 0 empty prev2 empty 17 7 0 10 -4034 -1
@@ -437,7 +437,7 @@
 #X connect 12 6 19 0;
 #X connect 12 7 20 0;
 #X restore 932 1036 pd keys;
-#X obj 602 240 cnv 15 75 30 empty progmt_ON ON 18 12 0 14 -258113 -66577
+#X obj 516 38 cnv 15 75 30 empty progmt_ON ON 18 12 0 14 -258113 -66577
 0;
 #X obj 69 841 s mtprog1;
 #X obj 186 839 s mtprog2;
@@ -451,7 +451,7 @@
 #X obj 453 977 s mtprev4;
 #X obj 606 1007 s mtprev5;
 #X obj 704 1021 s mtprev6;
-#X obj 209 38 cnv 15 75 30 empty prevmt_ON ON 18 12 0 14 -4034 -66577
+#X obj 37 38 cnv 15 75 30 empty prevmt_ON ON 18 12 0 14 -4034 -66577
 0;
 #X obj 833 832 s cutmt;
 #X obj 834 955 s autopmt;
@@ -491,7 +491,7 @@
 #X obj 780 150 tgl 75 0 empty Rdsk1Air ON_AIR 10 37 0 15 -262144 -262144
 -1 0 1;
 #X obj 874 150 tgl 75 0 empty Rdsk2Air ON_AIR 10 37 0 15 -258699 -258699
--1 1 1;
+-1 0 1;
 #X obj 780 57 tgl 75 0 empty Rdsk1Tie TIE 22 37 0 15 -262144 -262144
 -1 0 1;
 #X obj 874 57 tgl 75 0 empty Rdsk2Tie TIE 22 37 0 15 -262144 -262144
@@ -516,10 +516,10 @@
 #X obj 1320 598 s Rdsk2Air;
 #X obj 1032 534 spigot;
 #X obj 1065 513 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 1398 449 spigot;
 #X obj 1431 428 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 1037 564 spigot;
 #X msg 1029 444 0;
 #X msg 1032 396 1;
@@ -530,7 +530,7 @@
 #X obj 1399 477 spigot;
 #X obj 1400 256 spigot;
 #X obj 1433 235 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 1405 286 spigot;
 #X msg 1397 166 0;
 #X msg 1400 118 1;
@@ -538,7 +538,7 @@
 #X obj 1384 85 t b b b;
 #X obj 1389 809 spigot;
 #X obj 1422 788 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 1394 839 spigot;
 #X msg 1386 719 0;
 #X msg 1389 671 1;
