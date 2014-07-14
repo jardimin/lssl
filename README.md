@@ -82,7 +82,7 @@ Voilá - já podemos cortar os canais através da interface do PD.
 
 > sudo usermod -a -G root your_user
 
-- Clone this repo and fir the scripts in different "gnome-terminal" tabs
+- Clone this repo and fire the scripts from different "gnome-terminal" tabs
 
 > git clone https://github.com/jardimin/lssl
 
